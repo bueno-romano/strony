@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsywne Menu z Rozwijanym Przyciskem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+    <header>
+        <div class="bg">
+            <div class="navbar">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="navbar-menu">
+                    <a href="index.html">Strona główna</a>
+                    <a href="#section1">O nas</a>
+                    <a href="#news">Aktualności</a>
+                    <a href="shop.html" class="shop">Sklep</a>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <h1>Example<b>Name</b>.com</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquam neque eius aperiam voluptatem illum debitis facilis ipsa nisi nostrum assumenda </p>
+            <button>LOOK</button>
+        </div>
+    </header>
+
+
+
+
+    <section id="section1">
+        <center><h2>O nas</h2></center>
+        <div class="about">
+            <div class="left">
+                <div class="im">
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="text2">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptates eius illo amet. Nobis incidunt dolore labore! At repudiandae odit facere, laudantium labore cumque, eos illum, error excepturi tempora neque.</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <article id="news">
+        <center><h2>Aktualności</h2></center>
+        <div class="container">
+            <div class="box">
+                <div class="text">
+                    <h3>Name Article</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam quas quasi sunt.</p>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="text">
+                    <h3>Name Article</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam quas quasi sunt.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <h3>Name Article</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam quas quasi sunt.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+    <section class="contact">
+        <center><h2>Kontakt</h2></center>
+        <center><h3 style="font-weight: 400;">Discord</h3></center>
+        <div class="cont">
+            <button class="link">https://discord.gg/6k6xrsJ3</button>
+            <button class="copy"><img src="img/copy.png"></button>
+            <br><button class="join">DOŁĄCZ</button>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>O nas</h3>
+            <p>Krótkie informacje o firmie lub projekcie.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Linki</h3>
+            <ul>
+              <li><a href="#">Strona główna</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Polityka prywatności</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Social Media</h3>
+            <p>Znajdź nas na platformach społecznościowych.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Twoja Firma. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('.navbar-menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+</body>
+</html>
